@@ -35,6 +35,7 @@
     [super viewWillLayoutSubviews];
     
     _badgeView.frame = CGRectMake(10, 30, 50, 43);
+    _badgeView.center = self.view.center;
     
 }
 
