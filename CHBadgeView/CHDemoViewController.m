@@ -26,13 +26,15 @@
     
     [self.view addSubview:_badgeView];
     
+    _badgeView.badgeLabel.text = @" 1";
+    
 }
 
 -(void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
     
-    _badgeView.frame = CGRectMake(10, 30, 150, 43);
+    _badgeView.frame = CGRectMake(10, 30, 50, 43);
     
 }
 
