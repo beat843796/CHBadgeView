@@ -1,6 +1,10 @@
 CHBadgeView
 =================
 
+![Pod Version](https://img.shields.io/cocoapods/v/CHBadgeView.svg?style=flat)
+![Pod License](https://img.shields.io/cocoapods/l/CHBadgeView.svg?style=flat)
+![Pod Platform](https://img.shields.io/cocoapods/p/CHBadgeView.svg?style=flat)
+
 ![Alt text](/badge.jpeg "Screenshot")
 
 About
