@@ -15,7 +15,8 @@ Usage
 
 3. Create and configure your badge and add it to your view hierachy.
 
-```objective-cself.badgeView = [[CHBadgeView alloc] init];
+```objective-c
+self.badgeView = [[CHBadgeView alloc] init];
 
 [self.view addSubview:_badgeView1];
 
