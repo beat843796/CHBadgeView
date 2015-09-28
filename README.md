@@ -17,8 +17,8 @@ Usage
 
 `self.badgeView = [[CHBadgeView alloc] init];`
 `[self.view addSubview:_badgeView1];`
-`_badgeView.badgeBorderColor = [UIColor colorWithRed:204.0f/255.0f green:81.0f/255.0f blue:19.0f/255.0f alpha:1.0];`
-`_badgeView.badgeColor = [UIColor colorWithRed:254.0f/255.0f green:105.0f/255.0f blue:31.0f/255.0f alpha:1.0];`
+`_badgeView.badgeBorderColor = [UIColor blueColor];`
+`_badgeView.badgeColor = [UIColor blackColor];`
 `_badgeView.badgeBorderWidth =0.5f;`
 `_badgeView.drawBadgeBorder = YES;`
 `_badgeView.badgeCornerRadius = 4.0;`
