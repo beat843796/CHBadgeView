@@ -46,6 +46,12 @@
 
 
 /**
+ *  Tells if the bottom arrow should be drawn, if set to yes ignores bottomArrowHeight, defaults to YES
+ */
+@property (nonatomic, assign) BOOL showArrow;
+
+
+/**
  *  The label that displays the content of the badge
  */
 @property (nonatomic, strong) UILabel *badgeLabel;

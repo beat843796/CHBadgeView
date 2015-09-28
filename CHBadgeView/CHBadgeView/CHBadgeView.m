@@ -26,8 +26,8 @@
         
         // Setup default settings
         
-        _badgeBorderColor = [UIColor colorWithRed:204.0f/255.0f green:81.0f/255.0f blue:19.0f/255.0f alpha:1.0];
-        _badgeColor = [UIColor colorWithRed:254.0f/255.0f green:105.0f/255.0f blue:31.0f/255.0f alpha:1.0];
+        _badgeBorderColor = [UIColor blackColor];
+        _badgeColor = [UIColor darkGrayColor];
         
         _badgeBorderWidth =0.5f;
         
@@ -36,6 +36,7 @@
         
         _bottomArrowHeight = 10.0f;
         
+        _showArrow = YES;
         
         // create the label
         
@@ -76,7 +77,7 @@
     }
     
     
-    _badgeLabel.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height-_bottomArrowHeight);
+    
     
     // Drawing with a white stroke color
     CGContextRef context=UIGraphicsGetCurrentContext();
@@ -104,7 +105,19 @@
     CGFloat radius = _badgeCornerRadius;
 
     CGFloat minx = CGRectGetMinX(rrect), midx = CGRectGetMidX(rrect), maxx = CGRectGetMaxX(rrect);
-    CGFloat miny = CGRectGetMinY(rrect), midy = CGRectGetMidY(rrect), maxy = CGRectGetMaxY(rrect)-_bottomArrowHeight;
+    CGFloat miny = CGRectGetMinY(rrect), midy = CGRectGetMidY(rrect);
+    
+    CGFloat maxy;
+    
+    if(_showArrow) {
+        _badgeLabel.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height-_bottomArrowHeight);
+        maxy = CGRectGetMaxY(rrect)-_bottomArrowHeight;
+    }else {
+        _badgeLabel.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+        maxy = CGRectGetMaxY(rrect);
+    }
+    
+       
 
     // Draw the badge shape
     CGContextMoveToPoint(context, minx, midy);
@@ -112,10 +125,14 @@
     CGContextAddArcToPoint(context, maxx, miny, maxx, midy, radius);
     CGContextAddArcToPoint(context, maxx, maxy, midx, maxy, radius);
     
-    // DRAW THE ARROW AT THE BOTTOM
-    CGContextAddLineToPoint(context, midx+_bottomArrowHeight, maxy);
-    CGContextAddLineToPoint(context, midx, maxy+_bottomArrowHeight);
-    CGContextAddLineToPoint(context, midx-_bottomArrowHeight, maxy);
+    if (_showArrow) {
+        // DRAW THE ARROW AT THE BOTTOM
+        CGContextAddLineToPoint(context, midx+_bottomArrowHeight, maxy);
+        CGContextAddLineToPoint(context, midx, maxy+_bottomArrowHeight);
+        CGContextAddLineToPoint(context, midx-_bottomArrowHeight, maxy);
+    }
+    
+    
     
     
     CGContextAddArcToPoint(context, minx, maxy, minx, midy, radius);
