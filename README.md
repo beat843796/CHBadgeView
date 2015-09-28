@@ -15,15 +15,15 @@ Usage
 
 3. Create and configure your badge and add it to your view hierachy.
 
-`self.badgeView = [[CHBadgeView alloc] init];`
-`[self.view addSubview:_badgeView1];`
-`_badgeView.badgeBorderColor = [UIColor blueColor];`
-`_badgeView.badgeColor = [UIColor blackColor];`
-`_badgeView.badgeBorderWidth =0.5f;`
-`_badgeView.drawBadgeBorder = YES;`
-`_badgeView.badgeCornerRadius = 4.0;`
-`_badgeView.bottomArrowHeight = 10.0f;`
-`_badgeView.badgeLabel.text = @" 1";`
+`self.badgeView = [[CHBadgeView alloc] init];
+[self.view addSubview:_badgeView1];
+_badgeView.badgeBorderColor = [UIColor blueColor];
+_badgeView.badgeColor = [UIColor blackColor];
+_badgeView.badgeBorderWidth =0.5f;
+_badgeView.drawBadgeBorder = YES;
+_badgeView.badgeCornerRadius = 4.0;
+_badgeView.bottomArrowHeight = 10.0f;
+_badgeView.badgeLabel.text = @" 1";`
 
 Check the demo project for more examples of possible configurations
 
