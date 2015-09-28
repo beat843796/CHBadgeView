@@ -29,7 +29,7 @@
         _badgeBorderColor = [UIColor blackColor];
         _badgeColor = [UIColor darkGrayColor];
         
-        _badgeBorderWidth =0.5f;
+        _badgeBorderWidth = 0.5f;
         
         _drawBadgeBorder = YES;
         _badgeCornerRadius = 4.0;
@@ -45,10 +45,6 @@
         self.badgeLabel.textAlignment = NSTextAlignmentCenter;
         self.badgeLabel.adjustsFontSizeToFitWidth = YES;
         self.badgeLabel.backgroundColor = [UIColor clearColor];
-
-        // configure label shadow
-        _badgeLabel.shadowColor   = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5];
-        _badgeLabel.shadowOffset  = CGSizeMake(0.0,-0.2);
 
         self.badgeLabel.textColor = [UIColor whiteColor];
         [self addSubview:_badgeLabel];

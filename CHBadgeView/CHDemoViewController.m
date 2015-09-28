@@ -35,6 +35,8 @@
     _badgeView1.badgeCornerRadius = 4.0;
     _badgeView1.bottomArrowHeight = 10.0f;
     _badgeView1.badgeLabel.text = @" 1";
+    _badgeView1.badgeLabel.shadowColor   = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5];
+    _badgeView1.badgeLabel.shadowOffset  = CGSizeMake(0.0,-0.2);
     _badgeView1.showArrow = YES;
     
     self.badgeView2 = [[CHBadgeView alloc] init];
