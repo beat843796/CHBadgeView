@@ -1,7 +1,7 @@
 CHBadgeView
 =================
 
-![Alt text](/badge.jpg "Screenshot")
+![Alt text](/badge.jpeg "Screenshot")
 
 About
 ---------
@@ -14,12 +14,6 @@ Usage
 1. Add the _CHBadgeView.h_ and _ChBadView.m_ files to your project.
 
 3. Create and configure your badge and add it to your view hierachy.
-
-`MLPAccessoryBadge *accessoryBadge = [MLPAccessoryBadge new];`
-
-`[accessoryBadge setText:@"Hello World"];`
-
-`[cell setAccessoryView:accessoryBadge];`
 
 `self.badgeView = [[CHBadgeView alloc] init];`
 `[self.view addSubview:_badgeView1];`
@@ -52,7 +46,7 @@ What to Expect in Future Updates
 
 License
 --------
-_MLPAccessoryBadge_ uses the MIT License:
+_CHBadgeView uses the MIT License:
 
 >Copyright (c) 2013, Mainloop LLC
 
