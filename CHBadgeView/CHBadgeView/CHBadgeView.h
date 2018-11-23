@@ -56,6 +56,9 @@
  */
 @property (nonatomic, strong) UILabel *badgeLabel;
 
-
+/**
+ * Return the Badge as an UIImage
+ */
+-(UIImage *)imageFromBadge;
 
 @end

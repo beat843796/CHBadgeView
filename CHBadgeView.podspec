@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'CHBadgeView'
-  s.version  = '1.0.1'
+  s.version  = '1.1'
   s.platform = :ios, '8.0'
   s.license  = 'MIT'
   s.summary  = 'A simple iOS Badge view inspired by the Instagramm App.'
